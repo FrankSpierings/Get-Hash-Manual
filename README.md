@@ -4,7 +4,7 @@ Instructions for obtaining password hashes.
 ### Obtaining Kerberos v5 - Type 18
 - Example capture: http://openwall.info/wiki/_media/john/krbv5-pcaps.tar.gz
 - Example hash:
-`$krb5pa$18$aduser$ad$AD.EXAMPLE.COMaduser$f94f755a8b4493d925094a4eb1cec630ac40411a14c9733a853516fe426637d9daefdedc0567e2bb5a83d4f89a0ad1a4b178662b6106c0ff`
+`$krb5pa$18$aduser$AD.EXAMPLE.COM$AD.EXAMPLE.COMaduser$f94f755a8b4493d925094a4eb1cec630ac40411a14c9733a853516fe426637d9daefdedc0567e2bb5a83d4f89a0ad1a4b178662b6106c0ff`
 - Wireshark filter: `kerberos`
 - Stage 1
  - Get the first reply of the KDC. This should be a `KRB Error` packet type. Error `KRB5KDC_ERR_PREAUTH_REQUIRED`. 
