@@ -10,6 +10,7 @@ Instructions for obtaining password hashes.
  - Get the first reply of the KDC. This should be a `KRB Error` packet type. Error `KRB5KDC_ERR_PREAUTH_REQUIRED`. 
  - Realm = `realm`
  - Salt  = `eTYPE-AES256-CTS-HMAC-SHA1-96` `salt`
+ - If the Salt is not provided, construct the salt as follows, Salt = `Realm``User`
 - Stage 2
  - Get the second request from the client to the KDC. This is an AS-REQ type packet.
  - User  = `KRB5-NT-PRINCIPAL`
